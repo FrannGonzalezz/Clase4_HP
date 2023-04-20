@@ -17,13 +17,11 @@ public static class ServicioPeli
             new Pelicula { Código = 5, Nombre = "The Northman", Direccion = "Robert Eggers",Género = "Aventuras/Acción", Duración = 136, Puntuación = 6.5},
             new Pelicula { Código = 6, Nombre = "Turning Red", Direccion = "Domee Shi",Género = "Animación/Fantasía", Duración = 100, Puntuación = 6.5},
             new Pelicula { Código = 7, Nombre = "The Black Phone", Direccion = "Scott Derrickson",Género = "Terror", Duración = 102, Puntuación = 6.3},
-            new Pelicula { Código = 8, Nombre = "Glass Onion: A Knives out Mystery", Direccion = "Rian Jhonson",Género = "Comedia/Crimen", Duración = 139, Puntuación = 6.1},   
+            new Pelicula { Código = 8, Nombre = "Glass Onion: A Knives out Mystery", Direccion = "Rian Jhonson",Género = "Comedia/Crimen", Duración = 139, Puntuación = 6.1},
             new Pelicula { Código = 9, Nombre = "Nope", Direccion = "Jordan Peele",Género = "Fantasía/Terror", Duración = 130, Puntuación = 6},
-            new Pelicula { Código = 10, Nombre = "Black Panther: Wakanda Forever", Direccion = "Ryan Coogler",Género = "Fantasía/Acción", Duración = 161, Puntuación = 5.5},
-            
+            new Pelicula { Código = 10, Nombre = "Black Panther: Wakanda Forever", Direccion = "Ryan Coogler",Género = "Fantasía/Acción", Duración = 161, Puntuación = 5.5}
         };
     }
-
     public static List<Pelicula> GetAll() => Peliculas;
 
     public static void Add(Pelicula obj)
@@ -45,4 +43,20 @@ public static class ServicioPeli
             Peliculas.Remove(peliABorrar);
         }
     }
+}
+
+public static class ServicioUltLanz
+{
+    static List<UltimoLanzamiento> UltLanz { get; set; }
+
+    static ServicioUltLanz()
+    {
+        UltLanz = new List<UltimoLanzamiento>()
+        { 
+            new UltimoLanzamiento {ID = 1, Nombre = "Mario Bros", FechaLanzamiento = "07/04/2023"},
+            new UltimoLanzamiento {ID = 2, Nombre = "Guardianes de la Galaxia", FechaLanzamiento = "21/04/2023"},
+            new UltimoLanzamiento {ID = 3, Nombre = "Creed III", FechaLanzamiento = "10/04/2023"}
+        };
+    }
+    public static List<UltimoLanzamiento> GetAll() => UltLanz;
 }

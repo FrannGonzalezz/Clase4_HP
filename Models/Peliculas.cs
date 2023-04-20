@@ -14,3 +14,12 @@ public class Pelicula
 
     public double Puntuación { get; set; }
 }
+
+public class UltimoLanzamiento
+{
+    public int ID { get; set; }
+
+    public string Nombre { get; set; }
+
+    public string FechaLanzamiento { get; set; }
+}

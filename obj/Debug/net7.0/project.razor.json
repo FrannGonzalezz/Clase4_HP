@@ -18660,6 +18660,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase_4\\Views\\Movies\\Index.cshtml",
+      "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase_4\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

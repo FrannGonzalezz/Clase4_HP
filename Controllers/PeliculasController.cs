@@ -1,23 +1,22 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Clase_4.Models;
 using Clase_4.Services;
 
 namespace Clase_4.Controllers;
 
-public class HomeController : Controller
+public class MoviesController : Controller
 {
-    public HomeController()
+    public MoviesController()
     {
 
     }
 
     public IActionResult Index()
     {   
-        var model = new List<UltimoLanzamiento>();
-        model = ServicioUltLanz.GetAll();
-
-        return View(model);
+        var modelo2 = new List<Pelicula>();
+        modelo2 = ServicioPeli.GetAll();
+        return View(modelo2);
     }
 
     public IActionResult Privacy()
