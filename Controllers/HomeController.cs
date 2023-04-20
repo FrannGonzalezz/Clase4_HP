@@ -1,21 +1,23 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Clase_4.Models;
+using Clase_4.Services;
 
 namespace Clase_4.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController()
     {
-        _logger = logger;
+
     }
 
     public IActionResult Index()
-    {
-        return View();
+    {   
+        var model = new List<Pelicula>();
+        model = ServicioPeli.GetAll();
+
+        return View(model);
     }
 
     public IActionResult Privacy()

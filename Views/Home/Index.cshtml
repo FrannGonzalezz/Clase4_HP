@@ -1,8 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<Pelicula>
+
+@{
+    ViewData["Title"] = "Películas 2022";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Mejores Peliculas 2022</h1>
+</div>
+<div class="text-left">
+    <h2>Top 10 </h2>
+    <span></span>
+    <p>A continuación se detallará un ranking con las mejores películas según la página "Diez Minutos"</p>
+</div>
+<span></span>
+<span></span>
+
+@* <div class= "text-left">
+    <ol>
+    @foreach (var peli in Model)
+    {
+        <li>@peli.Nombre, Dureación: @peli.Duración minutos</li>
+    }
+</ol>
+</div> *@
+
+@*--------- TABLA ---------------------------*@
+<div class="text-center">
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="">Ranking</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Detalle</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var peli in Model)
+        {
+          <tr>
+              <td>@peli.Código</td>
+              <td>@peli.Nombre</td>
+              <td>@peli.Direccion</td>
+              <td><button type="button" class="btn btn-light">Más información</button></td>
+          </tr>
+        }
+</tbody>
+</table>
 </div>

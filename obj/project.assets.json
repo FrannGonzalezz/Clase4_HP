@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase 4\\Clase_4\\Clase_4.csproj",
+      "projectUniqueName": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase_4\\Clase_4.csproj",
       "projectName": "Clase_4",
-      "projectPath": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase 4\\Clase_4\\Clase_4.csproj",
+      "projectPath": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase_4\\Clase_4.csproj",
       "packagesPath": "C:\\Users\\fgonz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase 4\\Clase_4\\obj\\",
+      "outputPath": "C:\\Users\\fgonz\\OneDrive\\Escritorio\\Análisis en sistemas - ISTEA\\2023\\HP\\Clase_4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fgonz\\AppData\\Roaming\\NuGet\\NuGet.Config"
