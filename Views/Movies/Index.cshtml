@@ -8,7 +8,7 @@
     <h1 class="display-4">Mejores Peliculas 2022</h1>
 </div>
 <div class="text-left">
-    <h2>Top 10 </h2>
+    <h2 class="display-6">Top 10 </h2>
     <span></span>
     <p>A continuación se detallará un ranking con las mejores películas según la página "DiezMinutos"</p>
 </div>
@@ -31,7 +31,7 @@
               <td>@peli.Código</td>
               <td>@peli.Nombre</td>
               <td>@peli.Direccion</td>
-              <td><button type="button" class="btn btn-light">Más información</button></td>
+              <td><a class="btn btn-light" tabindex="-1" role="button" aria-disabled="true" asp-action="Detalle" asp-route-id ="@peli.Código">Más Información</a></td>
           </tr>
         }
 </tbody>

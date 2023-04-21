@@ -13,11 +13,19 @@ public class MoviesController : Controller
     }
 
     public IActionResult Index()
-    {   
+    {
         var modelo2 = new List<Pelicula>();
         modelo2 = ServicioPeli.GetAll();
         return View(modelo2);
     }
+
+    public IActionResult Detalle(int id)
+    {
+        var model = ServicioPeli.Get(id);
+        return View(model);
+    }
+
+
 
     public IActionResult Privacy()
     {
