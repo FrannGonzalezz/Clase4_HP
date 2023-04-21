@@ -25,7 +25,11 @@ public class MoviesController : Controller
         return View(model);
     }
 
-
+    public IActionResult Editar(int id)
+    {
+        var model3 = ServicioPeli.Get(id);
+        return View(model3);
+    }
 
     public IActionResult Privacy()
     {
